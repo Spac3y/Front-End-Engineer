@@ -1,4 +1,26 @@
 
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.money_input {
+	border-radius: 1px;
+}
+
+.description_link:link, .description_link:visited {
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #1f9ece;
+}
+
 .share, .save {
 	color:#777676;
 	background-color:#efefee;
