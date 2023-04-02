@@ -7,8 +7,38 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
+}
+
+body {
+	max-width: 500px;
+	margin: auto;
+}
+
+.remaining_funds {
+	border-width: 0px;
+	background-color: #474748;
+	color:white;
+
+	font-family: sans-serif;
+	font-weight: 500;
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 35px;
+	padding-right:35px;
+
+}
+
+.progress_bar {
+	color: #ed6139;
+}
+
+.main_element {
+	border:5px,black;
+	padding: 20px;
 }
 
 .money_input {
@@ -21,10 +51,41 @@ input[type=number] {
 	color: #1f9ece;
 }
 
-.share, .save {
-	color:#777676;
-	background-color:#efefee;
 
+.donate_button {
+	background-color: #02b51c;
+	color:white;
+
+	border-radius: 2.5px;
+	border-width: 0px;
+	
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: large;
+
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left:22px;
+	padding-right:22px;
+}
+
+.donation {
+	align-items: end;
+	margin-top: 20px;
+	margin-bottom: 15px;
+
+}
+
+.save {
+	margin-right: 15px;
+}
+
+.share, .save {
+	margin-top: 20px;
+
+	color:#777777;
+	background-color:#fafafa;
+	
 	font-weight: 700;
 	font-family:  Arial, Helvetica, sans-serif;
 	
@@ -33,9 +94,10 @@ input[type=number] {
 	padding-left: 30px;
 	padding-right: 30px;
 
-	border-top-width: 1;
-	border-bottom-width: 20;
-	border-left-width: 1;
-	border-right-width: 1;
+	border-color: #fffcfc;
+	border-top-width: 0.5px;
+	border-bottom-width: 2px;
+	border-left-width: 0.5px;
+	border-right-width: 0.5px;
 	border-radius: 2.5px;
 }
