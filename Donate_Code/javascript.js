@@ -1,0 +1,1 @@
+const neededMoney = 2500;

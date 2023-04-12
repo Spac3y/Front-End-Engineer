@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport", initial-scale=1.0">
+    <meta name="viewport" , initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="javascript.js"></script>
 
-    <title>Donate</title>
+    <title>Donation Page</title>
 </head>
+
 <body>
-    <div class="left_funds">
-        
-    </div>
-    <div class="main_element">
-        <p class="time_remaining">Only X days left</p>
-        <p>to fund this project</p>
-        <div class="fund_description">
-            <p>Join the <var></var> other donors who have already support this project. Every dollar helps.</p>
+    <div class="wrapper">
+        <div class="needed_funds">
+            <span class="text_needed_funds">$20</span>
+            <span>&nbspstill needed for this project</span>
         </div>
-        <div>
-            <input type="number" class="money_input" name="money_input" inputmode="numeric"><br>
+        <div class="progress_bar">
+            <div class="fill_progress_bar"></div>
         </div>
-    </div>
-    <div class="buttons_row">
-        <button class="save" onclick="">Save for later</button>
-        <button class="share" onclick="">Tell your friends</button>
+        <div class="main_element">
+            <span class="text_time_remaining">Only 3 days left</span>
+            <span>&nbspto fund this project.</span>
+            <div class="fund_description">
+                <span>Join the&nbsp</span>
+                <span class="text_number_participants"></span>
+                <span>&nbspother donors who have already supported this project. Every dollar helps.</span>
+            </div>
+            <div>
+                <input type="number" class="money_input" name="money_input" inputmode="numeric"><br>
+            </div>
+        </div>
+        <div class="buttons_row">
+            <button class="save" onclick="">Save for later</button>
+            <button class="share" onclick="">Tell your friends</button>
+        </div>
     </div>
 </body>
+
 </html>
