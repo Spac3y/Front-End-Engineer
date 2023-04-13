@@ -9,7 +9,6 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="javascript.js"></script>
 
     <title>Donation Page</title>
 </head>
@@ -21,34 +20,34 @@
             <span>&nbspstill needed for this project</span>
         </div>
         <div class="progress_bar">
-            <div class="fill_progress_bar"></div>
+            <div id="fill-progress-bar"></div>
         </div>
         <div class="main_element">
             <div class="time-remaining">
-                <span class="text_time_remaining">Only 3 days left</span>
-                <span>&nbspto fund this project.</span>
+               <span id="time-remaining-text">Only 3 days left</span>
+                <span>to fund this project.</span>
             </div>
             <div class="fund_description">
                 <span>Join the</span>
-                <span class="text_number_participants">42</span>
+                <span id="text-number-participants">0</span>
                 <span>other donors who have already supported this project. Every dollar helps.</span>
             </div>
             <div class="donation-row">
                 <input type="number" class="money-input" name="money_input" inputmode="numeric">
-                <button class="donate">Give Now</button>
+                <input class="donate" type="submit" value="Give Now" onclick="addDonators()">
             </div>
             <div class="why-donate">
-                <span> Why give</span>
-                <span class="why-donate-text">50$</span>
-                <span>?</span>
+                <a class="why-donate-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    Why give <span class="why-donate-text">$50</span>?
+                </a>
             </div>
         </div>
         <div class="buttons-row">
-            <button class="save" onclick="">Save for later</button>
-            <button class="share" onclick="">Tell your friends</button>
+            <button class="save" onclick="alert('Saved!')">Save for later</button>
+            <button class="share" onclick="console.log('share')">Tell your friends</button>
         </div>
     </div>
     </div>
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
-
 </html>
