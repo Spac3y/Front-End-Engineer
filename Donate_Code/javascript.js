@@ -31,10 +31,22 @@ function addDonators() {
 	element.textContent = parseInt(element.textContent) + 1;
 }
 
-function addMoney() {
-	bar = document.getElementById('fill-progress-bar');
-	percent = parseInt(bar.offsetWidth);
-	console.log(percent);
+function addMoney(addedValue) {
+	element = document.getElementById('fill-progress-bar');
+	var widthPerc = 100*(element.offsetWidth) / element.offsetParent.offsetWidth;
+
+	var addedPercentage = (addedValue / 1000) * 100;
+	element.style.width = widthPerc + addedPercentage + '%';
+	console.log(element.style.width);
 }
 
-addMoney();
+function updateFunds(addedValue) {
+	var remaining = 1000 - addedValue;
+	document.getElementById('text-needed-funds').innerText = remaining;
+}
+
+function updateContext(addedValue) {
+	addMoney(addedValue);
+	updateFunds(addedValue);
+	addDonators();
+}

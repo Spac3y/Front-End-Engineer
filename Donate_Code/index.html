@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
         <div class="needed_funds">
-            <span class="text_needed_funds">$20</span>
+            <span id="text-needed-funds">$1000</span>
             <span>&nbspstill needed for this project</span>
         </div>
         <div class="progress_bar">
@@ -33,8 +33,8 @@
                 <span>other donors who have already supported this project. Every dollar helps.</span>
             </div>
             <div class="donation-row">
-                <input type="number" class="money-input" name="money_input" inputmode="numeric">
-                <input class="donate" type="submit" value="Give Now" onclick="addDonators()">
+                <input type="number" id="money-input" name="money-input" inputmode="numeric">
+                <input class="donate" type="submit" value="Give Now" onclick="updateContext(document.getElementById('money-input').value)">
             </div>
             <div class="why-donate">
                 <a class="why-donate-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
